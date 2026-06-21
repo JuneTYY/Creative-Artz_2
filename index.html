@@ -654,6 +654,7 @@
                 });
 
                 if (response.ok) {
+                    const data = await response.json();
                     alert(`Thanks ${name}. Your enquiry has been received successfully.`);
                     document.getElementById("contactForm").reset();
                 } else {
