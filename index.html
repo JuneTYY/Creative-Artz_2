@@ -655,7 +655,7 @@
 
                 if (response.ok) {
                     const data = await response.json();
-                    alert(`Thanks ${name}. Your enquiry has been received successfully.`);
+                    alert(data.message);
                     document.getElementById("contactForm").reset();
                 } else {
                     throw new Error("API rejection status.");
