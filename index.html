@@ -656,9 +656,6 @@
                 console.log("Status:", response.status);
                 console.log("Headers:", [...response.headers.entries()]);
                 
-                const rawText = await response.text();
-                console.log("Raw response:", rawText);
-
                 if (response.ok) {
                     const data = await response.json();
                     alert(data.message);
